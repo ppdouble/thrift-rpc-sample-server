@@ -1,7 +1,7 @@
-## thrift version
+## 1. thrift version
 0.10.0
 
-## dependences
+## 2. dependences
 
 ```xml
 <dependency>
@@ -28,14 +28,22 @@ plugin
                 <version>0.10.0</version>
 ```
 
-## Implementing Service
+## 3. thrift file
+
+java package name
+
+```java
+namespace java thrift.rpc.api.user
+```
+
+## 4. Implementing Service
 
 ```java
 public class UserServiceImpl implements UserService.Iface {
 }
 ```
 
-## Register Service to server
+## 5. Register Service to server
 
 ```java
                     new TSimpleServer(new TServer.Args(serverTransport)
