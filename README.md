@@ -4,7 +4,7 @@
 ## 2. dependences
 
 ```xml
-<dependency>
+        <dependency>
             <groupId>org.apache.thrift</groupId>
             <artifactId>libthrift</artifactId>
             <version>0.10.0</version>
@@ -28,6 +28,12 @@ plugin
                 <version>0.10.0</version>
 ```
 
+source folder and target folder
+
+```xml
+                    <thriftSourceRoot>${basedir}/src/main/resources/thrift</thriftSourceRoot>
+                    <outputDirectory>${basedir}/src/main/java/</outputDirectory>
+```
 ## 3. thrift file
 
 java package name
